@@ -1,0 +1,26 @@
+function [E]=exp_step_P(xt,X,k,alpha,MX,m)
+% r=r0;
+xs=size(X);
+E=zeros(xs(1),k);
+
+   
+    for j=1:k
+
+dXM = X(:)-MX(j);
+
+E(:,j) = alpha(j)*(   1/( sum ( exp(m(j)*cos(xt) ) ) )*exp(m(j)*cos(dXM)  )    );
+
+
+    end
+
+
+
+
+for i=1:xs(1) 
+    
+E(i,:) = E(i,:)/sum(E(i,:));
+end
+
+
+
+end
