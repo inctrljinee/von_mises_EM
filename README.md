@@ -1,3 +1,5 @@
+# von_mises_EM
+
 - Von-mises distribution with EM algorithm 
 
 This code demonstrates EM Algorithm for circular data. 
@@ -11,4 +13,4 @@ See p.106 in the text book Pattern Recognition and Machine learning by Christope
 
 In this example, I used audio data that are panned between multiple audio channels.
 
-# von_mises_EM
+
